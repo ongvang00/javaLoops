@@ -5,13 +5,10 @@ public class CountToEleven {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a number less than 11");
-        int integer = Integer.valueOf(scanner.nextLine());
+        int i = Integer.valueOf(scanner.nextLine());
 
-        int i = 1;
-        while (i < 11) {
-            System.out.println(integer + i);
-            i++;
-
+        for ( ; i <= 11; i++) {
+            System.out.println(i);
         }
     }
 }

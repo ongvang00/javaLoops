@@ -7,8 +7,10 @@ public class Multiplication {
         int integer = Integer.valueOf(scanner.nextLine());
         int i = 0;
         while (i <= 10) {
-            System.out.println(integer + " x " + i++ + " = " + (integer * i));
-            i++;
+            int increase = i++;
+            int multiply = increase * integer;
+            System.out.println(integer + " x " + increase + " = " + multiply);
+
         }
     }
 }
